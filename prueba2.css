@@ -168,14 +168,14 @@ position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Asegura que los elementos se ajusten en dispositivos móviles */
+  flex-wrap: wrap; 
 }
 
 .monitor {
   text-align: left;
   flex: 1;
   min-width: 300px; 
-  margin-top: -210px;/* Asegura que el contenido se ajuste en pantallas más pequeñas */
+  margin-top: -210px;
 }
 
 .monitor h1 {
@@ -203,7 +203,7 @@ position: absolute;
   padding: 10px 80px;border: none; 
   border-radius: 68px; cursor: pointer;
   background-color: #EF2A82;
-  color: #fff; /* Añade margen inferior para espacio entre el botón y el contenido */
+  color: #fff; 
 }
 
 .images {
@@ -211,16 +211,16 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px; /* Asegura que el contenido se ajuste en pantallas más pequeñas */
+  min-width: 300px; 
  
 }
  
 
 .images img {
   width: 100%;
-  max-width: 1100px; /* Limita el tamaño máximo de la imagen */
+  max-width: 1100px; 
   height: auto;
-  margin-right: -19%; /* Mantiene la proporción de la imagen */
+  margin-right: -19%; 
   position: relative;
 }
 
@@ -264,7 +264,7 @@ position: absolute;
     padding: 10px 80px;border: none; 
     border-radius: 68px; cursor: pointer;
     background-color: #EF2A82;
-    color: #fff;  /* Centra el botón y añade espacio superior e inferior */
+    color: #fff; 
   }
 
   .images {
@@ -275,6 +275,7 @@ position: absolute;
     margin-top: 0;
   }
 }
+
 
 
 
@@ -326,14 +327,14 @@ h2 {
 
 .automated {
     display: flex;
-    flex-direction: row; /* Alinear en fila */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Alinear verticalmente al centro */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .texto {
-    flex: 1; /* Ocupa el espacio restante */
-    padding: 20px; /* Espaciado interior para separar del borde */
+    flex: 1; 
+    padding: 20px; 
 }
 
 .texto h2 {
@@ -359,15 +360,16 @@ h2 {
 
 
 .imagen {
-    flex: 1; /* Ocupa el espacio restante */
-    padding: 20px; /* Espaciado interior para separar del borde */
+    flex: 1; 
+    padding: 20px; 
 }
 
 .imagen img {
-    max-width: 100%; /* Imagen no sobrepasa el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; 
+    height: auto; 
 }
 
+/*footer*/
 
 .footer {
   background-color:#172755;
