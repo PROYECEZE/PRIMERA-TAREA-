@@ -277,6 +277,7 @@ position: absolute;
 }
 
 
+
 h2 {
    text-align: center; 
   margin-top: 100px; 
@@ -288,11 +289,13 @@ h2 {
 .features p { 
   text-align: center;
    color:black; 
-   font-size: 20px; 
+   font-size: 18px; 
    font-weight: 400; 
    margin-top: 25px;
     margin-bottom: 80px;
     color: #8794BA;
+  line-height: 27px;
+  
   }
 
 .feature-grid {
@@ -318,35 +321,108 @@ h2 {
 }
 
 
-.testimonial {  
-  padding: 50px;
-   text-align: left;
-   }
-.testimonial h2 { 
+
+
+
+.automated {
+    display: flex;
+    flex-direction: row; /* Alinear en fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+}
+
+.texto {
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 20px; /* Espaciado interior para separar del borde */
+}
+
+.texto h2 {
   font-size: 3.0em; 
   margin-top: 5px; 
   text-align: justify; 
-  line-height: 1.8; 
+  line-height: 1.1; 
   margin-left: 95px; 
   margin-right: 100px; 
-  color: black
+  color: black;
 }
-.testimonial p { 
+
+.texto p {
   font-size: 1.0em;
-   margin-top: 40px;
-    text-align: justify; 
-    line-height: 1.8;
-     margin-left: 125px
-     ; margin-right: 100px; 
-     color: #8794BA;
-    }
-.testimonial img {
-  width: 600px;
-  height: 410px;
-  left: 580.26px;
-  gap: 0px;
-  opacity: 0px;
-  float: left; 
+  margin-top: 40px;
+  text-align: justify; 
+  line-height: 1.8;
+  margin-left: 125px;
+  margin-right: 100px; 
+  color: #8794BA;
+}
+
+
+
+.imagen {
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 20px; /* Espaciado interior para separar del borde */
+}
+
+.imagen img {
+    max-width: 100%; /* Imagen no sobrepasa el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.footer {
+  background-color:#172755;
+  padding: 30px 0;
+}
+
+.footer-1 {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.col h4{
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
 
 }
+
+.col p {
+  color:#8794BA;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+
+
+}
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-unstyled li {
+  margin-bottom: 10px;
+}
+.list-unstyled a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.end { 
+ text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
