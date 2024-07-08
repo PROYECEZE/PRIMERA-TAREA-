@@ -30,6 +30,7 @@ body {
   margin: 0 auto;
 }
 
+
 .text-decoration-none {
   text-decoration: none;
 }
@@ -64,17 +65,8 @@ body {
   color: #FFFFFF;
 }
 
-.vector1 {
-  width: 1438px;
-  height: 1438px;
-  top: -95px;
-  left: 1470px;
-  gap: 0px;
-  opacity: 0.07px;
-  position: absolute;
-}
 
-/* Estilos generales */
+
 .header {
   position: absolute;
   width: 100%;
@@ -87,6 +79,10 @@ body {
   justify-content: space-between;
   align-items: center;
   
+}
+
+.header .nav__logo{
+  align-items: center;
 }
 
 .header .header__nav {
@@ -121,80 +117,64 @@ body {
 .header .header__btn {
   width: 160px;
 }
+/* Estilos generales */
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
-  .header {
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
 
-  .header .header__content {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 20px;
-  }
+ 
 
-  .header .header__nav {
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
-
-  .header .nav__menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 1px;
-    padding: 10px 0;
-  }
-
-  .header .menu__link {
-    font-size: 14px;
-    line-height: 16px;
-    color: #8794BA;
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .header .header__login {
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
-
-  .header .header__btn {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
+.header {
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
-@media (max-width: 480px)
- {
-  .header {
-    padding-top: 10px;
-    padding-bottom: 5px;
-  }
+.header .header__content {
+  flex-direction: column;
+  align-items: center; 
+  padding: 0 20px;
+}
 
-  .header .header__content {
-    padding: 0 10px;
-  }
+.header .header__nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 4px;
+}
 
-  .header .nav__menu {
-    gap: 10px;
-    padding: 5px 0;
-  }
+.header .nav__menu {
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  padding: 10px 0;
+}
 
-  .header .menu__link {
-    font-size: 12px;
-    padding: 5px 0;
-  }
+.header .menu__link {
+  font-size: 14px;
+  line-height: 12px;
+  color: #8794BA;
+  width: 100%;
+  text-align: center; 
+  padding: 10px 0;
+}
 
-  .header .header__login {
-    gap: 10px;
-   }
-  }
+.header .header__login {
+  width: 70%; 
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 1px; 
+}
+
+.header .header__btn {
+  width: auto; 
+  padding: 10px 40px; 
+  margin-top: 1px; 
+}
+}
+
   
   .main {
     display: flex;
@@ -270,7 +250,7 @@ body {
   
   @media (max-width: 768px) {
     .main {
-      padding-top: 400px;
+      padding-top: 100px;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -302,7 +282,7 @@ body {
   
     .cta-button {
       padding: 10px 40px;
-      margin: 20px auto;
+      margin: 10px auto;
       width: 80%;
     }
   
@@ -312,44 +292,37 @@ body {
     }
   
     .images img {
-      max-width: 80%;
+      max-width: 90%;
       position: relative;
     }
   }
 
 
  
-  .structure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     margin-left: 210px;
-     margin-right: 210px;
-    gap: 40px;
-  } 
-  
+ 
   h2 {
     text-align: center;
     margin: 20px 0;
     font-weight: 700;
-    font-size: 2.5rem;
-    padding: 0 20px;
+    font-size: 40px;
+
   }
   
   .features p {
     text-align: center;
-    font-size: 1.2em;
-    margin: 40px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 30px 10px;
     color: #8794BA;
     line-height: 1.5;
-    padding: 0 20px;
+ 
   }
   
   .feature-grid-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
   }
   
   .feature-grid {
@@ -363,23 +336,24 @@ body {
   
   .feature-grid div {
     flex: 1 1 250px;
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
   }
   
   .feature-grid div h3 {
-    font-weight: 500;
+    font-weight: 700;
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 17px;
     line-height: 22px;
   }
 
     
   .feature-grid p{
     margin: 20px 0;
-    font-size: 1.1em;
+    font-size: 16px;
+    font-weight: 400;
     padding: 1px;
     text-align: center;
     
@@ -389,13 +363,67 @@ body {
     margin: 20px auto;
   }
 
+  @media (max-width: 768px) {
+    
 
-
-
+    .features-main{
+      margin-top: -90px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      
+    }
+  
+    .features p {
+      font-size: 1em;
+      margin: 20px 5px;
+    
+    }
+  
+    .feature-grid-1 {
+      flex-direction: column;
+      margin: 10px;
+    }
+  
+    .feature-grid {
+      flex-direction: column;
+      gap: 30px;
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .feature-grid div {
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .feature-grid div h3 {
+      font-size: 1.2rem;
+    }
+  
+    .feature-grid p {
+      font-size: 1em;
+      margin: 10px 0;
+      padding: 0;
+    }
+  
+    .feature-grid div svg {
+      margin: 10px auto;
+    }
+  }
   
 
+
+
+
+
+
+
+
   .automated-one {
-    padding: 0 1%;
+    padding: 0;
     margin: auto;
   }
   
@@ -420,16 +448,16 @@ body {
   }
   
   .texto h2 {
-    font-size: 2em; 
+    font-size: 35px; 
     margin: 5px 0;
-    text-align: justify;
+    text-align: justify; 
     line-height: 1.1;
     padding: 0 5%; 
     color: black;
   }
   
   .texto p {
-    font-size: 1em;
+    font-size: 17px;
     margin: 40px 0;
     text-align: justify;
     line-height: 1.8;
@@ -439,11 +467,11 @@ body {
   
   .imagen {
     flex: 1 1 45%;
-    padding: 20px;
+    
   }
   
   .imagen img {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
     display: block;
     margin: auto; 
@@ -867,8 +895,13 @@ body {
 
 @media (max-width: 768px) {
   .pricing-plans {
-    gap: 50px;
-    margin-top: 10px;
+    gap: 30px;
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .pricing-plans__info {
+   text-align: center;
   }
 
   .pricing-plans .pricing-plans__cards {
@@ -909,38 +942,50 @@ body {
 
  
 /*footer*/
-.pricing-plans__footer{
-
- margin-left: 250px;
- margin-right: 210px;
- margin-bottom: 110px;
-
+/* Ajustes generales */
+.pricing-plans__footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 110px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.border{
+.border {
   border-top: 1px solid #2A407C;
-  margin-bottom: 50px;
-  margin-left: 420px;
-  margin-right: 420px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
 }
-
 
 .footer {
   padding-top: 50px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .footer .footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.footer .footer__logo1 {
+  flex: 1;
+  text-align: left;
+  align-items: center;
+  margin-bottom: -8px;
 }
 
 .footer .footer__nav {
+  flex: 2; 
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  gap: 280px;
 }
 
 .footer .nav__menu1 {
@@ -948,7 +993,7 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 40px;
+  gap: 50px;
 }
 
 .footer .menu1__link {
@@ -956,41 +1001,13 @@ body {
   font-weight: 400;
   line-height: 18px;
   color: #8794BA;
+  align-items: center;
 }
-
-
-
-
 
 .footer-icons {
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; 
-  gap: 15px; 
-  margin-top: 20px;
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 15px; 
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-  display: flex; 
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -998,62 +1015,59 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 15px; 
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .social-icons li {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 /* Estilos para pantallas más pequeñas dispositivos móviles */
 @media (max-width: 768px) {
-  .pricing-plans__footer {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
+  .footer .footer__content {
+    flex-direction: column; /* Cambia la dirección a columna para disposición vertical */
+    align-items: center; /* Alinea al centro los elementos */
   }
 
-  .border {
-    margin-left: 20px;
-    margin-right: 20px;
+  .footer .footer__logo1,
+  .footer .footer__nav,
+  .footer .footer-icons {
+    flex: unset;
+    margin-bottom: 40px; 
+    text-align: center; 
   }
 
   .footer .footer__nav {
-    gap: 20px;
+    margin-bottom: 40px; 
   }
 
-  .footer .menu1__link {
-    font-size: 12px;
-    gap: 20px;
+  .footer .footer__nav .nav__menu1 {
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .svgg img {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-}
-
-
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px; 
+  .footer .footer__nav .menu1__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #8794BA;
+    display: inline-block;
   }
 
-  .social-icons li {
-    margin-right: 10px; 
-  }
+  .footer .footer-icons .social-icons {
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 30px; 
 
-  .svgg img {
-    display: none; 
   }
 }
-
