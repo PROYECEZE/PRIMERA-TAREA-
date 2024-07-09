@@ -326,7 +326,7 @@ body {
   
   .feature-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: space-around;
     gap: 60px;
     padding: 20px;
@@ -363,39 +363,37 @@ body {
   }
 
   @media (max-width: 768px) {
-    
-
-    .features-main{
-      margin-top: -90px;
+    .features-main {
+      margin-top: -130px;
+      padding: 0px; 
     }
   
     h2 {
       font-size: 2rem;
-      
     }
   
     .features p {
       font-size: 1em;
-      margin: 20px 5px;
-    
+      margin: 20px 0px;
+      justify-items: center;
     }
   
     .feature-grid-1 {
       flex-direction: column;
-      margin: 10px;
+      margin: 10px 0; 
     }
   
     .feature-grid {
       flex-direction: column;
       gap: 30px;
-      padding: 10px;
-      margin: 10px;
+      padding: 0; 
+      margin: 0; 
     }
   
     .feature-grid div {
       flex: 1 1 100%;
       max-width: 100%;
-      padding: 10px;
+      padding: 10px 0; 
     }
   
     .feature-grid div h3 {
@@ -412,8 +410,6 @@ body {
       margin: 10px auto;
     }
   }
-  
-
 
 
 
@@ -435,7 +431,7 @@ body {
     align-items: center;
     flex-wrap: wrap; 
     gap: 80px;
-    padding: 20px;
+    padding: 60px 0px 0px;
     
   }
   
@@ -460,7 +456,7 @@ body {
     margin: 40px 0;
     text-align: justify;
     line-height: 1.8;
-    padding: 0 5%; 
+    padding: 0%; 
     color: #8794BA;
   }
   
@@ -494,7 +490,7 @@ body {
       align-items: flex-start;
     }
     .texto {
-      padding: 10px;
+      padding: 0px 
     }
   
     .texto h2 {
@@ -511,18 +507,19 @@ body {
       margin-top: 20px;
       margin-left: 10px;
       margin-right: 10px;
-      text-align: justify;
+      text-align: center;
       line-height: 1.5;
     }
   
     .imagen {
       padding: 10px;
-      margin-top: -50px;
+      margin-top: -120px;
+      margin-bottom: 10px;
     }
   
     .imagen img {
       margin-left: 0;
-      width: 100%;
+      width: 90%;
     }
   }
   
@@ -543,8 +540,8 @@ body {
     .texto p {
       font-size: 0.9em;
       margin-top: 10px;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 0px;
+      margin-right: 0px;
       line-height: 1.4;
     }
   
@@ -555,7 +552,6 @@ body {
     .imagen img {
       margin-left: 0;
       width: 100%;
-    
     }
   }
 
@@ -567,7 +563,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding-bottom: 3px;
-    padding-top: 200px;
+    padding-top: 192px;
   }
 
 /*primera carta*/
@@ -839,7 +835,7 @@ body {
   gap: 80px;
 }
 
-.pricing-plans .pricing-plans__card {
+.pricing-plans .pricing-plans__carddd  {
   display: flex;
   flex-direction: column;
   gap: 37px;
@@ -852,20 +848,32 @@ body {
 
 }
 
+.pricing-plans .pricing-plans__carddd {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding: 50px 60px 70px 60px;
+  max-width: 340px;
+  width: 100%;
+  background-color: #0F1F4B;
+  border-radius: 30px;
+  position: relative;
 
-.pricing-plans__card .card__header {
+}
+
+.pricing-plans__carddd .card__headerdd {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.card__header h3 {
+.card__headerdd h3 {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
 }
 
-.card__header p {
+.card__headerdd p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -873,7 +881,7 @@ body {
   
 }
 
-.pricing-plans__card .card__content {
+.pricing-plans__carddd .card__content {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -906,7 +914,7 @@ body {
 @media (max-width: 768px) {
   .pricing-plans {
     gap: 30px;
-    margin-top: 25px;
+    margin-top: 60px;
     align-items: center;
   }
 
@@ -917,19 +925,33 @@ body {
   .pricing-plans .pricing-plans__cards {
     flex-direction: column;
     gap: 50px;
+    
   }
 
   .pricing-plans .pricing-plans__card {
     padding: 30px;
     max-width: 90%;
     align-self: center;
+    margin-top: -100px;
+    
   }
+
+
 
   .pricing-plans .pricing-plans__cardd{
     padding: 30px;
     max-width: 90%;
     align-self: center;
   }
+
+  .pricing-plans .pricing-plans__carddd {
+    padding: 30px;
+    max-width: 90%;
+    align-self: center;
+    margin-top: 10px;
+    
+  }
+
 
   .card__header h3 {
     font-size: 24px;
